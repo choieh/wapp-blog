@@ -1,0 +1,475 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Paytone+One');
+
+/*reset*/
+html,body,h1,h2,h3,h4,h5,div,ul,ol,li,dl,dt,dd,table,tr,th,td,thead,tbody,form,fieldset,p,address,header,nav,article,section,aside,footer,figure,main{margin: 0;padding: 0;box-sizing: border-box;}
+
+header,nav,main,section,article,footer,figure,aside{display: block;}
+
+ul,ol,li{list-style: none;}
+
+a{text-decoration: none; color: #898989;}
+a img{border: none;}
+img{vertical-align: middle;}
+
+body{
+    font: 15px 'Noto Sans KR', 'snas-serif';
+    color: #898989;
+}
+
+/*layout*/
+header, .story, .side-menu, .relation, .copyright{
+    padding: 5px 10px;
+}
+
+/*사이트 정보*/
+.site h1{
+    font: normal 30px 'Payton One' , 'cursive';
+}
+.site h1 a{
+    color: #F2380F;
+}
+
+/*기사*/
+.story h1{
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #000;
+}
+
+.story p{
+    margin-bottom: 20px;
+}
+
+.story img{
+    max-width: 100%;
+    height: auto;
+    /* height: auto; 반응형 웹에서 디바이스 크기에 따라 이미지가 자동으로 높이 조절*/
+}
+
+/*기사의 소제목*/
+.story h2{
+    margin: 40px 0 20px;
+    padding-left: 10px;
+    font-weight: normal;
+    color: #000;
+    border-left:10px solid #248b30; 
+}
+
+/*기사 작성일*/
+.timeInfo{
+    margin: 0 0 20px;
+}
+
+.timeInfo i{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+/*share*/
+.share{
+    margin-top: 40px;
+}
+
+.share ul:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.share li{
+    float: left;
+    width: 33.3333%;
+}
+   
+.share li a{
+    display: block;
+    padding: 10px 5px;
+    color: #fff;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.share li:nth-child(1){
+    background: #1DA1F2;
+}
+
+.share li:nth-child(2){
+    background: #3B5998;
+}
+
+.share li:nth-child(3){
+    background: #F20505;
+}
+
+.share li:nth-child(1) a:hover{
+    border-color: #1DA1F2;
+    background: #fff;
+    color: #1DA1F2;
+}
+
+.share li:nth-child(2) a:hover{
+    border-color: #3B5998;
+    background: #fff;
+    color: #3B5998;
+}
+
+.share li:nth-child(3) a:hover{
+    border-color: #F2380F;
+    background: #fff;
+    color: #F2380F;
+}
+
+
+/*관련기사*/
+.relation{
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #e2dfda;
+}
+
+.relation h2{
+    margin: 0 0 5px;
+    color: #248b30;
+    font-weight: normal;
+}
+
+.relation ul:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.relation li{
+    float: left;
+    width: 25%;
+}
+
+.relation li a{
+    display: block;
+    padding: 5px;
+}
+
+.relation li a:hover{
+    text-decoration: underline;
+    color: #222;
+}
+
+.relation img{
+    width: 100%;
+    height: auto;
+}
+
+.relation .text{
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+
+/*기사 분류*/
+.story-cat{
+    margin-bottom: 25px;
+}
+
+.story-cat ul:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.story-cat li{
+    float: left;
+    width: auto;
+}
+
+.story-cat li a{
+    display: block;
+    padding: 3px 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    background-color: #659f3b;
+    color: #eee;
+    font-size: 12px;
+}
+
+.story-cat li a:hover{
+    background-color: #399019;
+}
+
+
+/*menu*/
+.menu{
+    background-color: #F2380F;
+}
+
+.menu ul:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.menu li{
+    float: left;
+    width: auto;
+}
+
+.menu li a{
+    display: block;
+    padding: 15px 30px;
+    color: #fff;
+}
+
+.menu li a:hover{
+    background-color: #D50F25;
+}
+
+
+/*Left-side*/
+.side-menu01 h2{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px dotted #ddd;
+    font-size: 18px;
+    color: #6c6b6b;
+}
+
+.special , .recommand{ margin-bottom: 30px;}
+
+/*특집기사*/
+.special{
+    margin-bottom: 30px;
+}
+
+.special li a{
+    display: block;
+    padding: 5px;
+    color: #222;
+}
+.special li a:hover{
+    background-color: #eee;
+}
+
+.special li a i{
+    margin-right: 5px;
+    color: #888;
+}
+
+
+/*추천기사*/
+.recommand li a{
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.recommand li a:hover{
+    background-color: #eee;
+    opacity: 0.8;
+}
+
+.recommand li img{
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.recommand .text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.6);
+}
+
+/*인기기사*/
+.popular h2{
+    margin-bottom: 10px;
+    border-bottom: 2px dotted #ddd;
+    font-size: 18px;
+    color: #6c6b6b;
+}
+
+.popular li a{
+    display: block;
+    padding: 5px;
+    border-bottom: 1px dotted #ddd;
+    color: #222;
+}
+
+.popular li a:hover{
+    background-color: #eee;
+}
+
+.popular li a:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.popular li:last-child a{
+    border-bottom: none;
+}
+
+.popular img{
+    float: left;
+    width: 60px;
+}
+
+.popular .text{
+    float: none;
+    width: auto;
+    margin-left: 60px;
+    padding-left: 15px;
+}
+
+.popular span{
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #898989;
+}
+
+/*copyright*/
+.copyright{border-top: 1px solid #ddd;}
+.copyright p{font-size: 14px; text-align: center;}
+
+
+/*박스 위 아래 간격조정*/
+header{padding: 8px 0;}
+.inner{padding: 40px 0 30px;}
+.side-menu{padding: 40px 0 30px;}
+.copyright{padding: 15px 0;}
+
+
+
+/*미디어 쿼리*/
+
+
+@media all and (max-width:599px){
+    
+    header, .story, .relation, .side-menu{padding: 10px;}
+    
+    .menu li a{
+        padding: 11px;
+        font-size: 14px;
+    }
+    
+    /*사이트 이름과 기사제목 수정*/
+    .site h1{font-size: 20px;}
+    .story h1{font-size: 26px;}
+    
+    /*박스여백조정*/
+    header {padding: 4px 0;}
+    .story{padding-top: 25px;}
+    
+    /*공유버튼*/
+    .share span{
+        display: inline-block;
+        text-indent: -9999px;
+    }
+    
+    
+    /*별책부록 -관련기사 항목을 2단으로 구성시*/
+/*
+    .relation li{
+        width: 50%;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+*/
+    
+}
+
+
+/*------600~767px*/
+@media all and (min-width:600px) and (max-width:767px){
+        
+    header, .story, .relation, .side-menu{padding: 10px;}
+    
+    /*aside 가록 설정*/
+    .side-menu:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    
+    .side-menu01{
+        float: left;
+        width: 50%;
+        padding-right: 20px;
+    }
+    
+    .side-menu02{
+        float: right;
+        width: 50%;
+        padding-left: 20px;
+    }
+    
+    .popular li a{
+        letter-spacing: -1px;
+    }
+    
+    
+}
+
+
+/*--------768px 이상---------*/
+@media all and (min-width:768px){
+    
+    /*기사와 사이드메뉴 가로정렬*/
+    .contets:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    
+    .inner{
+        float: left;
+        width: 70%;
+    }
+    
+    .side-menu{
+        float: left;
+        width: 30%;
+    }
+    
+    /*스토리와 사이드 메뉴 간격*/
+    .story{
+        padding: 50px;
+    }
+    
+}
+
+
+
+/*--------1024px 이상---------*/
+@media all and (min-width:1040px){
+    
+    header,.menu,.contents,.copyright{
+        width: 1000px;
+        margin: 0 auto;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

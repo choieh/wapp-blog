@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<!--
+작성자 : 최은혜
+설명 : 반응형 블로그
+-->
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블로그 웹진 TimeSwitch</title>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+    <header id="main-header">
+       <div class="site">
+           <h1>
+               <a href="#">TimeSwitch</a>
+           </h1>
+       </div> 
+    </header><!--//header-->
+    
+    <div class="menu">
+        <nav class="gnb">
+            <ul>
+                <li><a href="#">메인</a></li>
+                <li><a href="#">잡화</a></li>
+                <li><a href="#">도구</a></li>
+                <li><a href="#">외출</a></li>
+                <li><a href="#">음식</a></li>
+                <li><a href="#">문의</a></li>
+            </ul>
+        </nav><!--//nav.gnb-->
+    </div><!--//.menu-->
+    
+    <div class="contents">
+       
+       <!--Left Area-->
+        <div class="inner">
+            <article class="story">
+                <div class="story-cat">
+                    <ul>
+                        <li><a href="#">음식</a></li>
+                        <li><a href="#">외출</a></li>
+                    </ul>
+                </div>
+                <h1>토마토를 맛있게 먹는 방법</h1>
+                
+                <div class="timeInfo">
+                    <i class="far fa-clock"></i>
+                    <time datetime="2019-04-25">2019-04-25</time>
+                </div>
+                <p>
+                    <img src="img/tomato.jpg" alt="잘익은 토마토">
+                    수확한 토마토를 바로 먹고 싶어서 서울 외곽에 있는 토마토 농가를 직접 다녀왔습니다. 이번에 온 농가의 토마토는 신선하고 저렴하군요.
+                </p>
+                <h2>신선한 토마토 구별방법</h2>
+                <p>
+                    신선한 토마토는 꼬지가 초록색으로 곧게 되었습니다. 빨간 열매는 껍질의 감이 좋고 둥근것이 좋습니다. 당도가 높은 토마토는 물이 가라앉으므로 쉽게 판별할 수 있습니다. 하지만 무조건 달다고 좋은 것은 아니랍니다.
+                </p>
+                <h2>토마토를 맛있게 먹는 방법</h2>
+                <p>
+                    일반적으로 토마토틑 물에 씻어서 바로 먹는것이 좋습니다. 더운 날에 맛있는 토마토를 먹으면 그것만으로도 행복한데요. 수분공급도 가능해서 일석이조 랍니다.
+                </p>
+                <p>
+                    물론 다른 것을 함께 뿌려 먹는 것도 맛있는데요, 소금, 설탕, 마요네즈 그리고 올리브유를 추천합니다.
+                </p>
+                
+                <div class="share">
+                    <ul>
+                        <li><a href="http://twitter.com/intent/tweet?text=[글자]&amp;url=[url]&amp;via=[계정]" onclick="window.open(this.href, 'SNS', 'width=500, height=300, menubar=no, toolbar=no, scrollbar=yes'); return false" class="share-tw">
+                        <i class="fab fa-twitter"></i><span>Twitter</span>로 공유</a></li>
+                        <li><a href="http://facebook.com/share.php?url=[URL]" onclick="window.open(this.href, 'SNS', 'width=500, height=300, menubar=no, toolbar=no, scrollbar=yes'); return false" class="share-fb">
+                        <i class="fab fa-facebook-f"></i><span>Facebook</span>로 공유</a></li>
+                        <li><a href="http://plus.google.com/share.php?url=[URL]" onclick="window.open(this.href, 'SNS', 'width=500, height=300, menubar=no, toolbar=no, scrollbar=yes'); return false" class="share-gp">
+                        <i class="fab fa-google-plus-g"></i><span>Google+</span>로 공유</a></li>
+                    </ul>
+                </div><!--//.share-->
+                
+                <aside class="relation">
+                    <h2>관련기사</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/red-150x150.jpg" alt="토마토">
+                                <div class="text">
+                                    토마토 재배 8화 - 토마토들이 붉은 색으로 물들기 시작합니다.
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/potato-150x150.jpg" alt="감자">
+                                <div class="text">
+                                    맛있는 감자요리 무한한 세상
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/eggplant-150x150.jpg" alt="가지">
+                                <div class="text">
+                                    영양만점 보라빛 가지 드디어 수확
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/can-150x150.jpg" alt="통조림">
+                                <div class="text">
+                                    원하는 건 다 있어~ 통조림푸드
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </aside><!--//aside.relation-->
+            </article><!--//article.story-->
+        </div><!--//inner-->
+        <!--//Left Area end-->
+        
+        <!--Right Area-->
+        <div class="side-menu">
+            <div class="side-menu01">
+                <aside class="special">
+                    <h2>특집기사</h2>
+                    <ul>
+                        <li>
+                           <a href="#">
+                            <i class="fas fa-caret-right"></i>
+                            알기쉬운 지도 읽기방법
+                            </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                            <i class="fas fa-caret-right"></i>
+                            처음부터 시작하는 토마토 기르기
+                            </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                            <i class="fas fa-caret-right"></i>
+                            혼밥의 진수 만개의 레시피
+                            </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                            <i class="fas fa-caret-right"></i>
+                            전기절약 어떻게 하나요?
+                            </a>
+                        </li>
+                    </ul>
+                </aside><!--//aside.special-->
+                
+                <aside class="recommand">
+                    <h2>추천기사</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/flower.jpg" alt="꽃꽂이">
+                                <div class="text">
+                                    처음부터 시작하는 꽃꽂이
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/old.jpg" alt="충전기">
+                                <div class="text">
+                                    오래된 스마트폰 충전시간?
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </aside><!--//aside.recommand-->
+            </div><!--//side-menu01-->
+            
+            <div class="side-menu02">
+                <aside class="popular">
+                    <h2>인기기사</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/flower-60x60.jpg" alt="꽂꽂이">
+                                <div class="text">
+                                    꽂을 좋아하는 사람들을 위한 포인트
+                                    <span>#외출</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/tel-60x60.jpg" alt="스마트폰">
+                                <div class="text">
+                                    스마트폰의 생활속 활용법
+                                    <span>#생활</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/green-60x60.jpg" alt="주말여행지">
+                                <div class="text">
+                                    주말에 가볼만한 서울 나들이
+                                    <span>#외출</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/bag-60x60.jpg" alt="가방">
+                                <div class="text">
+                                    특이한 종이가방 여기에 다 있네
+                                    <span>#잡화</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/color-60x60.jpg" alt="인테리어">
+                                <div class="text">
+                                    포인트 컬러로 원룸 꾸미기
+                                    <span>#생활</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/sea-60x60.jpg" alt="바다">
+                                <div class="text">
+                                    가볼만한 바다 여행 추천
+                                    <span>#외출</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </aside><!--//aside.popular-->
+            </div><!--//side-menu02-->
+            
+        </div><!--//side-menu-->
+        <!--//Right Area end-->
+        
+    </div><!--//.contents-->
+    
+    <footer class="copyright">
+        <p>
+            Copyright &copy; TimeSwitch 2019.
+        </p>
+    </footer><!--//footer.copyright-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---->
